@@ -33,10 +33,10 @@ namespace EDDemo.Estructuras_No_Lineales
         {            
             if (Nodo == null)
             {
-                Nodo = new NodoBinario();
-                Nodo.Dato = Dato;
-                Nodo.Izq = null;
-                Nodo.Der = null;
+                // Removido el constructor que estaba puesto por el docente
+                // Ahora new NodoBinario posee un objeto Dato (el dato introducido)
+                // Estos cambios fueron vistos en clase
+                Nodo = new NodoBinario(Dato);
 
                 if (Raiz == null)
                     Raiz = Nodo;
