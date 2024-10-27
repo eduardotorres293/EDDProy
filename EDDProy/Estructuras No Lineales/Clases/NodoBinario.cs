@@ -14,7 +14,6 @@ namespace EDDemo.Estructuras_No_Lineales
 
         // Añadido constructor para el nodo, asi como  un objeto int Dato que permite
         // leer el dato de entrada
-        // Estos cambios fueron vistos en clase
         public NodoBinario(int Dato)
         {
             this.Dato = Dato;

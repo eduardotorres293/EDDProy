@@ -60,6 +60,12 @@
       <DependentUpon>frmArboles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\NodoBinario.cs" />
+    <Compile Include="frmGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafica.Designer.cs">
+      <DependentUpon>frmGrafica.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,10 +78,14 @@
     <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafica.resx">
+      <DependentUpon>frmGrafica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
@@ -92,6 +102,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="external\config6" />
+    <None Include="external\gvmap.sh" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +117,106 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="external\acyclic.exe" />
+    <Content Include="external\ANN.dll" />
+    <Content Include="external\bcomps.exe" />
+    <Content Include="external\brotlicommon.dll" />
+    <Content Include="external\brotlidec.dll" />
+    <Content Include="external\bz2.dll" />
+    <Content Include="external\cairo-2.dll" />
+    <Content Include="external\ccomps.exe" />
+    <Content Include="external\cdt.dll" />
+    <Content Include="external\cgraph++.dll" />
+    <Content Include="external\cgraph.dll" />
+    <Content Include="external\circo.exe" />
+    <Content Include="external\cluster.exe" />
+    <Content Include="external\concrt140.dll" />
+    <Content Include="external\diffimg.exe" />
+    <Content Include="external\dijkstra.exe" />
+    <Content Include="external\dot.exe" />
+    <Content Include="external\dot2gxl.exe" />
+    <Content Include="external\dot_builtins.exe" />
+    <Content Include="external\edgepaint.exe" />
+    <Content Include="external\fdp.exe" />
+    <Content Include="external\ffi-8.dll" />
+    <Content Include="external\fontconfig-1.dll" />
+    <Content Include="external\freetype.dll" />
+    <Content Include="external\fribidi-0.dll" />
+    <Content Include="external\gc.exe" />
+    <Content Include="external\gdtclft.dll" />
+    <Content Include="external\getopt.dll" />
+    <Content Include="external\gio-2.0-0.dll" />
+    <Content Include="external\glib-2.0-0.dll" />
+    <Content Include="external\gml2gv.exe" />
+    <Content Include="external\gmodule-2.0-0.dll" />
+    <Content Include="external\gobject-2.0-0.dll" />
+    <Content Include="external\graphml2gv.exe" />
+    <Content Include="external\gts.dll" />
+    <Content Include="external\gv2gml.exe" />
+    <Content Include="external\gv2gxl.exe" />
+    <Content Include="external\gvc++.dll" />
+    <Content Include="external\gvc.dll" />
+    <Content Include="external\gvcolor.exe" />
+    <Content Include="external\gvgen.exe" />
+    <Content Include="external\gvmap.exe" />
+    <Content Include="external\gvpack.exe" />
+    <Content Include="external\gvplugin_core.dll" />
+    <Content Include="external\gvplugin_dot_layout.dll" />
+    <Content Include="external\gvplugin_gd.dll" />
+    <Content Include="external\gvplugin_gdiplus.dll" />
+    <Content Include="external\gvplugin_kitty.dll" />
+    <Content Include="external\gvplugin_neato_layout.dll" />
+    <Content Include="external\gvplugin_pango.dll" />
+    <Content Include="external\gvplugin_vt.dll" />
+    <Content Include="external\gvplugin_webp.dll" />
+    <Content Include="external\gvpr.exe" />
+    <Content Include="external\gxl2dot.exe" />
+    <Content Include="external\gxl2gv.exe" />
+    <Content Include="external\harfbuzz.dll" />
+    <Content Include="external\iconv-2.dll" />
+    <Content Include="external\intl-8.dll" />
+    <Content Include="external\jpeg62.dll" />
+    <Content Include="external\libexpat.dll" />
+    <Content Include="external\libgd.dll" />
+    <Content Include="external\liblzma.dll" />
+    <Content Include="external\libpng16.dll" />
+    <Content Include="external\libsharpyuv.dll" />
+    <Content Include="external\libwebp.dll" />
+    <Content Include="external\mingle.exe" />
+    <Content Include="external\mm2gv.exe" />
+    <Content Include="external\msvcp140.dll" />
+    <Content Include="external\msvcp140_1.dll" />
+    <Content Include="external\msvcp140_2.dll" />
+    <Content Include="external\msvcp140_atomic_wait.dll" />
+    <Content Include="external\msvcp140_codecvt_ids.dll" />
+    <Content Include="external\neato.exe" />
+    <Content Include="external\nop.exe" />
+    <Content Include="external\osage.exe" />
+    <Content Include="external\pango-1.0-0.dll" />
+    <Content Include="external\pangocairo-1.0-0.dll" />
+    <Content Include="external\pangoft2-1.0-0.dll" />
+    <Content Include="external\pangowin32-1.0-0.dll" />
+    <Content Include="external\patchwork.exe" />
+    <Content Include="external\pathplan.dll" />
+    <Content Include="external\pcre2-8.dll" />
+    <Content Include="external\pixman-1-0.dll" />
+    <Content Include="external\prune.exe" />
+    <Content Include="external\sccmap.exe" />
+    <Content Include="external\sfdp.exe" />
+    <Content Include="external\tcl86t.dll" />
+    <Content Include="external\tcldot.dll" />
+    <Content Include="external\tcldot_builtin.dll" />
+    <Content Include="external\tclplan.dll" />
+    <Content Include="external\tiff.dll" />
+    <Content Include="external\tred.exe" />
+    <Content Include="external\twopi.exe" />
+    <Content Include="external\unflatten.exe" />
+    <Content Include="external\vcruntime140.dll" />
+    <Content Include="external\vcruntime140_1.dll" />
+    <Content Include="external\xdot.dll" />
+    <Content Include="external\zlib1.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
