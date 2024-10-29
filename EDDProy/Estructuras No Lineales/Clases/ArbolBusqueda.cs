@@ -66,6 +66,8 @@ namespace EDDemo.Estructuras_No_Lineales
                 InsertaNodo(Dato, ref Nodo.Izq);
             else if (Dato > Nodo.Dato)
                 InsertaNodo(Dato, ref Nodo.Der);
+            else
+                MessageBox.Show($"El elemento {Dato} ya está en el árbol.");
         }
         public void MuestraArbolAcostado(int nivel, NodoBinario nodo)
         {
@@ -83,17 +85,19 @@ namespace EDDemo.Estructuras_No_Lineales
         public String ToDot(NodoBinario nodo)
         {
             StringBuilder b = new StringBuilder();
+
             if (nodo.Izq != null)
             {
-                b.AppendFormat("{0}->{1} [side=L] {2} ", nodo.Dato.ToString(), nodo.Izq.Dato.ToString(), Environment.NewLine);
+                b.AppendFormat("\"{0}\" -> \"{1}\" [label=\"L\"];" + Environment.NewLine, nodo.Dato, nodo.Izq.Dato); // Muestra "L" refiriendose a Left en inglés (izquierda)
                 b.Append(ToDot(nodo.Izq));
             }
 
             if (nodo.Der != null)
             {
-                b.AppendFormat("{0}->{1} [side=R] {2} ", nodo.Dato.ToString(), nodo.Der.Dato.ToString(), Environment.NewLine);
+                b.AppendFormat("\"{0}\" -> \"{1}\" [label=\"R\"];" + Environment.NewLine, nodo.Dato, nodo.Der.Dato); // Muestra "R" refiriendose a Right en inglés (derecha)
                 b.Append(ToDot(nodo.Der));
             }
+
             return b.ToString();
         }
 

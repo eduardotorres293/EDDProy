@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Estructuras_Lineales.Clases
 {
-    // Nodo utilizado en pilas, colas, y listas simples y circulares simples
-    public class Nodo
+    // Clase nodo doble usada en listas dobles y listas circulares dobles, usando anterior como un nuevo objeto
+    public class NodoDoble
     {
         public string Valor;
-        public Nodo sig;
-
-        public Nodo(string valor)
+        public NodoDoble sig;
+        public NodoDoble ant;
+        public NodoDoble(string valor)
         {
             Valor = valor;
             sig = null;
+            ant = null;
         }
     }
 }

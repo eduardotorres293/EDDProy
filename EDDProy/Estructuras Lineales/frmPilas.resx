@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Una pila es una estructura de datos que sigue el principio LIFO (Last In, First Out), lo que significa que el último elemento en 
+entrar es el primero en salir. Se puede comparar con una pila de tortillas, donde solo la tortilla en la parte superior puede ser 
+retirada. 
+Las operaciones principales son push (agregar un elemento) y pop (eliminar el elemento superior).
+</value>
+  </data>
 </root>

@@ -49,8 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Colas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasCircularesDobles.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasCircularesSimples.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasDobles.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasSimples.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\NodoDoble.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
