@@ -102,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\EDDemo.exe.config" />
+    <None Include="bin\Debug\external\config6" />
+    <None Include="bin\Debug\external\gvmap.sh" />
     <None Include="external\config6" />
     <None Include="external\gvmap.sh" />
     <None Include="packages.config" />
@@ -119,6 +122,107 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\EDDemo.exe" />
+    <Content Include="bin\Debug\EDDemo.pdb" />
+    <Content Include="bin\Debug\external\acyclic.exe" />
+    <Content Include="bin\Debug\external\ANN.dll" />
+    <Content Include="bin\Debug\external\bcomps.exe" />
+    <Content Include="bin\Debug\external\brotlicommon.dll" />
+    <Content Include="bin\Debug\external\brotlidec.dll" />
+    <Content Include="bin\Debug\external\bz2.dll" />
+    <Content Include="bin\Debug\external\cairo-2.dll" />
+    <Content Include="bin\Debug\external\ccomps.exe" />
+    <Content Include="bin\Debug\external\cdt.dll" />
+    <Content Include="bin\Debug\external\cgraph++.dll" />
+    <Content Include="bin\Debug\external\cgraph.dll" />
+    <Content Include="bin\Debug\external\circo.exe" />
+    <Content Include="bin\Debug\external\cluster.exe" />
+    <Content Include="bin\Debug\external\concrt140.dll" />
+    <Content Include="bin\Debug\external\diffimg.exe" />
+    <Content Include="bin\Debug\external\dijkstra.exe" />
+    <Content Include="bin\Debug\external\dot.exe" />
+    <Content Include="bin\Debug\external\dot2gxl.exe" />
+    <Content Include="bin\Debug\external\dot_builtins.exe" />
+    <Content Include="bin\Debug\external\edgepaint.exe" />
+    <Content Include="bin\Debug\external\fdp.exe" />
+    <Content Include="bin\Debug\external\ffi-8.dll" />
+    <Content Include="bin\Debug\external\fontconfig-1.dll" />
+    <Content Include="bin\Debug\external\freetype.dll" />
+    <Content Include="bin\Debug\external\fribidi-0.dll" />
+    <Content Include="bin\Debug\external\gc.exe" />
+    <Content Include="bin\Debug\external\gdtclft.dll" />
+    <Content Include="bin\Debug\external\getopt.dll" />
+    <Content Include="bin\Debug\external\gio-2.0-0.dll" />
+    <Content Include="bin\Debug\external\glib-2.0-0.dll" />
+    <Content Include="bin\Debug\external\gml2gv.exe" />
+    <Content Include="bin\Debug\external\gmodule-2.0-0.dll" />
+    <Content Include="bin\Debug\external\gobject-2.0-0.dll" />
+    <Content Include="bin\Debug\external\graphml2gv.exe" />
+    <Content Include="bin\Debug\external\gts.dll" />
+    <Content Include="bin\Debug\external\gv2gml.exe" />
+    <Content Include="bin\Debug\external\gv2gxl.exe" />
+    <Content Include="bin\Debug\external\gvc++.dll" />
+    <Content Include="bin\Debug\external\gvc.dll" />
+    <Content Include="bin\Debug\external\gvcolor.exe" />
+    <Content Include="bin\Debug\external\gvgen.exe" />
+    <Content Include="bin\Debug\external\gvmap.exe" />
+    <Content Include="bin\Debug\external\gvpack.exe" />
+    <Content Include="bin\Debug\external\gvplugin_core.dll" />
+    <Content Include="bin\Debug\external\gvplugin_dot_layout.dll" />
+    <Content Include="bin\Debug\external\gvplugin_gd.dll" />
+    <Content Include="bin\Debug\external\gvplugin_gdiplus.dll" />
+    <Content Include="bin\Debug\external\gvplugin_kitty.dll" />
+    <Content Include="bin\Debug\external\gvplugin_neato_layout.dll" />
+    <Content Include="bin\Debug\external\gvplugin_pango.dll" />
+    <Content Include="bin\Debug\external\gvplugin_vt.dll" />
+    <Content Include="bin\Debug\external\gvplugin_webp.dll" />
+    <Content Include="bin\Debug\external\gvpr.exe" />
+    <Content Include="bin\Debug\external\gxl2dot.exe" />
+    <Content Include="bin\Debug\external\gxl2gv.exe" />
+    <Content Include="bin\Debug\external\harfbuzz.dll" />
+    <Content Include="bin\Debug\external\iconv-2.dll" />
+    <Content Include="bin\Debug\external\intl-8.dll" />
+    <Content Include="bin\Debug\external\jpeg62.dll" />
+    <Content Include="bin\Debug\external\libexpat.dll" />
+    <Content Include="bin\Debug\external\libgd.dll" />
+    <Content Include="bin\Debug\external\liblzma.dll" />
+    <Content Include="bin\Debug\external\libpng16.dll" />
+    <Content Include="bin\Debug\external\libsharpyuv.dll" />
+    <Content Include="bin\Debug\external\libwebp.dll" />
+    <Content Include="bin\Debug\external\mingle.exe" />
+    <Content Include="bin\Debug\external\mm2gv.exe" />
+    <Content Include="bin\Debug\external\msvcp140.dll" />
+    <Content Include="bin\Debug\external\msvcp140_1.dll" />
+    <Content Include="bin\Debug\external\msvcp140_2.dll" />
+    <Content Include="bin\Debug\external\msvcp140_atomic_wait.dll" />
+    <Content Include="bin\Debug\external\msvcp140_codecvt_ids.dll" />
+    <Content Include="bin\Debug\external\neato.exe" />
+    <Content Include="bin\Debug\external\nop.exe" />
+    <Content Include="bin\Debug\external\osage.exe" />
+    <Content Include="bin\Debug\external\pango-1.0-0.dll" />
+    <Content Include="bin\Debug\external\pangocairo-1.0-0.dll" />
+    <Content Include="bin\Debug\external\pangoft2-1.0-0.dll" />
+    <Content Include="bin\Debug\external\pangowin32-1.0-0.dll" />
+    <Content Include="bin\Debug\external\patchwork.exe" />
+    <Content Include="bin\Debug\external\pathplan.dll" />
+    <Content Include="bin\Debug\external\pcre2-8.dll" />
+    <Content Include="bin\Debug\external\pixman-1-0.dll" />
+    <Content Include="bin\Debug\external\prune.exe" />
+    <Content Include="bin\Debug\external\sccmap.exe" />
+    <Content Include="bin\Debug\external\sfdp.exe" />
+    <Content Include="bin\Debug\external\tcl86t.dll" />
+    <Content Include="bin\Debug\external\tcldot.dll" />
+    <Content Include="bin\Debug\external\tcldot_builtin.dll" />
+    <Content Include="bin\Debug\external\tclplan.dll" />
+    <Content Include="bin\Debug\external\tiff.dll" />
+    <Content Include="bin\Debug\external\tred.exe" />
+    <Content Include="bin\Debug\external\twopi.exe" />
+    <Content Include="bin\Debug\external\unflatten.exe" />
+    <Content Include="bin\Debug\external\vcruntime140.dll" />
+    <Content Include="bin\Debug\external\vcruntime140_1.dll" />
+    <Content Include="bin\Debug\external\xdot.dll" />
+    <Content Include="bin\Debug\external\zlib1.dll" />
+    <Content Include="bin\Debug\Graphviz.dll" />
     <Content Include="external\acyclic.exe" />
     <Content Include="external\ANN.dll" />
     <Content Include="external\bcomps.exe" />
@@ -217,6 +321,9 @@
     <Content Include="external\vcruntime140_1.dll" />
     <Content Include="external\xdot.dll" />
     <Content Include="external\zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
