@@ -97,7 +97,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void InsertCenter(string valor, int posicion)
         {
             // Verifica si la posición es válida (entre 1 y tamaño + 1)
-            if (posicion < 1 && posicion > tamaño + 1)
+            if (posicion < 1 || posicion > tamaño + 1)
             {
                 MessageBox.Show("Posición inválida");
                 return; // Sale si la posición no es válida
@@ -182,13 +182,13 @@ namespace EDDemo.Estructuras_Lineales.Clases
                 primero.sig = null;
                 primero.ant = null;
             }
-            tamaño--; // Decrementa el tamaño de la lista
+            tamaño--; // Se reduce el tamaño de la lista
         }
 
         public void DeleteCenter(int posicion)
         {
             // Verifica si la posición es válida (entre 1 y tamaño)
-            if (posicion < 1 && posicion > tamaño)
+            if (posicion < 1 || posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return; // Sale si la posición no es válida

@@ -85,7 +85,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para insertar un nodo en una posición específica
         public void InsertCenter(string valor, int posicion)
         {
-            if (posicion < 1 && posicion > tamaño + 1)
+            if (posicion < 1 || posicion > tamaño + 1)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -174,7 +174,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para eliminar un nodo en una posición específica
         public void DeleteCenter(int posicion)
         {
-            if (posicion < 1 && posicion > tamaño)
+            if (posicion < 1 || posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;

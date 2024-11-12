@@ -9,8 +9,8 @@ namespace EDDemo.Estructuras_Lineales.Clases
 {
     public class Listas
     {
-        private Nodo inicio;
-        private int tamaño;
+        public Nodo inicio;
+        public int tamaño;
         public Listas()
         {
             inicio = null;
@@ -99,7 +99,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         {
             posicion -= 1;
 
-            if (posicion < 0 && posicion >= tamaño)
+            if (posicion < 0 || posicion >= tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -161,7 +161,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         {
             posicion -= 1;
 
-            if (posicion < 0 && posicion > tamaño)
+            if (posicion < 0 || posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;

@@ -96,14 +96,16 @@ namespace EDDemo
             // listasSimplesToolStripMenuItem
             // 
             this.listasSimplesToolStripMenuItem.Name = "listasSimplesToolStripMenuItem";
-            this.listasSimplesToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.listasSimplesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasSimplesToolStripMenuItem.Text = "Listas simples";
+            this.listasSimplesToolStripMenuItem.Click += new System.EventHandler(this.listasSimplesToolStripMenuItem_Click);
             // 
             // listasDoblesToolStripMenuItem
             // 
             this.listasDoblesToolStripMenuItem.Name = "listasDoblesToolStripMenuItem";
-            this.listasDoblesToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.listasDoblesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasDoblesToolStripMenuItem.Text = "Listas dobles";
+            this.listasDoblesToolStripMenuItem.Click += new System.EventHandler(this.listasDoblesToolStripMenuItem_Click);
             // 
             // listasCircularesToolStripMenuItem
             // 
@@ -119,12 +121,14 @@ namespace EDDemo
             this.listasCircularesSimplesToolStripMenuItem.Name = "listasCircularesSimplesToolStripMenuItem";
             this.listasCircularesSimplesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.listasCircularesSimplesToolStripMenuItem.Text = "Listas circulares simples";
+            this.listasCircularesSimplesToolStripMenuItem.Click += new System.EventHandler(this.listasCircularesSimplesToolStripMenuItem_Click);
             // 
             // listasCircularesDoblesToolStripMenuItem
             // 
             this.listasCircularesDoblesToolStripMenuItem.Name = "listasCircularesDoblesToolStripMenuItem";
             this.listasCircularesDoblesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.listasCircularesDoblesToolStripMenuItem.Text = "Listas circulares dobles";
+            this.listasCircularesDoblesToolStripMenuItem.Click += new System.EventHandler(this.listasCircularesDoblesToolStripMenuItem_Click);
             // 
             // estructurasNoLibealesToolStripMenuItem
             // 

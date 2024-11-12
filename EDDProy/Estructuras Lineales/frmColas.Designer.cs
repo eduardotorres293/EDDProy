@@ -64,9 +64,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.label5.Location = new System.Drawing.Point(107, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(341, 37);
+            this.label5.Size = new System.Drawing.Size(296, 37);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Estructuras no lineales";
+            this.label5.Text = "Estructuras lineales";
             // 
             // panel2
             // 

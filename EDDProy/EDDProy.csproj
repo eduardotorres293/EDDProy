@@ -63,6 +63,30 @@
     <Compile Include="Estructuras Lineales\frmColas.Designer.cs">
       <DependentUpon>frmColas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras Lineales\frmListasCircularesDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasCircularesDobles.Designer.cs">
+      <DependentUpon>frmListasCircularesDobles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasCircularesSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasCircularesSimples.Designer.cs">
+      <DependentUpon>frmListasCircularesSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasDobles.Designer.cs">
+      <DependentUpon>frmListasDobles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmListasSimples.Designer.cs">
+      <DependentUpon>frmListasSimples.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
@@ -94,6 +118,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras Lineales\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmListasCircularesDobles.resx">
+      <DependentUpon>frmListasCircularesDobles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmListasCircularesSimples.resx">
+      <DependentUpon>frmListasCircularesSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmListasDobles.resx">
+      <DependentUpon>frmListasDobles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmListasSimples.resx">
+      <DependentUpon>frmListasSimples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>

@@ -60,5 +60,33 @@ namespace EDDemo
             mColas.MdiParent = this;
             mColas.Show();
         }
+
+        private void listasSimplesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasSimples mListasSimples = new frmListasSimples();
+            mListasSimples.MdiParent = this;
+            mListasSimples.Show();
+        }
+
+        private void listasDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasDobles mListasDobles = new frmListasDobles();
+            mListasDobles.MdiParent = this;
+            mListasDobles.Show();
+        }
+
+        private void listasCircularesSimplesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasCircularesSimples mListasCircularesSimples = new frmListasCircularesSimples();
+            mListasCircularesSimples.MdiParent = this;
+            mListasCircularesSimples.Show();
+        }
+
+        private void listasCircularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListasCircularesDobles mListasCircularesDobles = new frmListasCircularesDobles();
+            mListasCircularesDobles.MdiParent = this;
+            mListasCircularesDobles.Show();
+        }
     }
 }
