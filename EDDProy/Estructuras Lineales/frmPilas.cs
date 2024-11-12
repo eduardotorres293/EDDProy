@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Estructuras_Lineales.Clases;
 //using EDDemo.Clases;
 
 namespace EDDemo
@@ -29,7 +30,7 @@ namespace EDDemo
             textBox.Height = (cantidadLineas * alturaLineas) + espacio;
         }
         // Esta funcion refresca la pila, permitiendo que se actualicen los cambios
-        private void RefreshPila()
+        private void recorrer()
         {
             txtPila.Text = pila.Mostrar();
             CajaDeTexto(txtPila);
@@ -44,7 +45,7 @@ namespace EDDemo
             if (!string.IsNullOrWhiteSpace(valor))
             {
                 pila.Push(valor);  // Añadir el elemento a la pila
-                RefreshPila(); // Se refresca la pila
+                recorrer(); // Se refresca la pila
                 txtValor.Clear();  // La caja de texto donde se introdujo el dato se vacía
             }
             else
@@ -59,7 +60,7 @@ namespace EDDemo
 
             if (eliminado != null)
             {
-                RefreshPila();
+                recorrer();
             }
             else
             {
@@ -69,8 +70,12 @@ namespace EDDemo
 
         private void btnVaciar_Click(object sender, EventArgs e)
         {
-            pila.Vaciar();
-            RefreshPila();
+            while (!pila.estaVacio())
+            {
+                pila.Pop();
+            }
+            recorrer();
+            MessageBox.Show("La pila ha sido vaciada");
         }
     }
 }

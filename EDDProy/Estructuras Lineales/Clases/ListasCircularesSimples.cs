@@ -20,7 +20,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         }
 
         // Método que verifica si la lista está vacía
-        public bool isEmpty()
+        public bool estaVacio()
         {
             return ultimo == null;
         }
@@ -28,7 +28,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para buscar un valor en la lista circular
         public string Search(string valorBuscado)
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return string.Empty; // Retorna un string vacío si la lista está vacía
             }
@@ -62,7 +62,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         {
             Nodo nuevoNodo = new Nodo(valor);
 
-            if (isEmpty()) // Si la lista está vacía
+            if (estaVacio()) // Si la lista está vacía
             {
                 ultimo = nuevoNodo;
                 ultimo.sig = nuevoNodo; // El nodo apunta a sí mismo
@@ -85,7 +85,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para insertar un nodo en una posición específica
         public void InsertCenter(string valor, int posicion)
         {
-            if (posicion < 1 || posicion > tamaño + 1)
+            if (posicion < 1 && posicion > tamaño + 1)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -119,7 +119,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para eliminar el nodo en la base (última posición)
         public void DeleteBase()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return;
@@ -150,7 +150,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para eliminar el nodo en la cabeza (primera posición)
         public void DeleteTop()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return;
@@ -174,7 +174,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para eliminar un nodo en una posición específica
         public void DeleteCenter(int posicion)
         {
-            if (posicion < 1 || posicion > tamaño)
+            if (posicion < 1 && posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -206,7 +206,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método para vaciar toda la lista circular
         public bool Vaciar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return false;
             }
@@ -228,7 +228,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Método que muestra los elementos de la lista
         public string Mostrar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;
             }

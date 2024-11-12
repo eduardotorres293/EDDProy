@@ -51,6 +51,8 @@ namespace EDDemo.Estructuras_No_Lineales
                 //Leer arbol completo y mostrarlo en caja de texto
                 miArbol.MuestraArbolAcostado(1, miRaiz);
                 txtArbol.Text = miArbol.strArbol;
+                int altura = miArbol.alturaNiveles(miRaiz);
+                txtAltura.Text = altura.ToString();
             }
             else
             {
@@ -58,8 +60,8 @@ namespace EDDemo.Estructuras_No_Lineales
             }
 
             txtDato.Text = "";
-
-
+            ActualizarNumNodos();
+            ActualizarNumHojas();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -72,6 +74,9 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPreOrden.Text = "";
             lblRecorridoInOrden.Text = "";
             lblRecorridoPostOrden.Text = "";
+            lblRecorridoNiveles.Text = "";
+            ActualizarNumNodos();
+            ActualizarNumHojas();
         }
 
         private void btnGrafica_Click(object sender, EventArgs e)
@@ -149,6 +154,21 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPostOrden.Text = "";
             miArbol.PostOrden(miRaiz);
             lblRecorridoPostOrden.Text = miArbol.strRecorrido;
+
+            //Recorrido por niveles
+            //Se obtiene el nodo Raiz del arbol
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.strRecorrido = "";
+
+            if(miRaiz == null)
+            {
+                lblRecorridoNiveles.Text = "El arbol esta vacio";
+                return;
+            }
+            lblRecorridoNiveles.Text = "";
+            miArbol.recorridoNiveles();
+            lblRecorridoNiveles.Text = miArbol.strRecorrido;
+
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
@@ -192,7 +212,18 @@ namespace EDDemo.Estructuras_No_Lineales
             miArbol.MuestraArbolAcostado(1, miRaiz);
             txtArbol.Text = miArbol.strArbol;
 
+            txtAltura.Text = miArbol.alturaNiveles(miRaiz).ToString(); // Se actualiza la altura
+            ActualizarNumNodos();
+            ActualizarNumHojas();
             txtDato.Text = "";
+        }
+        private void ActualizarNumNodos()
+        {
+            txtNumNodos.Text = miArbol.ObtenerCantidadNodos().ToString();
+        }
+        private void ActualizarNumHojas()
+        {
+            txtHojas.Text = miArbol.ObtenerCantidadHojas().ToString();
         }
 
         private void txtDato_TextChanged(object sender, EventArgs e)
@@ -231,6 +262,101 @@ namespace EDDemo.Estructuras_No_Lineales
             {
                 MessageBox.Show("Inserte  un elemento válido");
             }
+        }
+
+        private void btnPodar_Click(object sender, EventArgs e)
+        {
+            miArbol.podaArbol();
+            txtArbol.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+            lblRecorridoNiveles.Text = "";
+            ActualizarNumNodos();
+            ActualizarNumHojas();
+        }
+
+        private void btnEliminarScsr_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Verificar que el valor ingresado sea un número entero
+            if (int.TryParse(txtEliminar.Text, out int datoEliminar))
+            {
+                miArbol.eliminarSucesor(datoEliminar, ref miRaiz);
+
+                // Leer el árbol completo y mostrarlo en el cuadro de texto
+                miArbol.strArbol = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                // Actualizar la altura, número de nodos y hojas
+                txtAltura.Text = miArbol.alturaNiveles(miRaiz).ToString();
+                ActualizarNumNodos();
+                ActualizarNumHojas();
+            }
+            else
+            {
+                MessageBox.Show("Inserte un elemento válido");
+            }
+
+            txtEliminar.Text = "";
+        }
+
+        private void btnEliminarPrdcsr_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Verificar que el valor ingresado sea un número entero
+            if (int.TryParse(txtEliminar.Text, out int datoEliminar))
+            {
+                miArbol.eliminarPredecesor(datoEliminar, ref miRaiz);
+
+                // Leer el árbol completo y mostrarlo en el cuadro de texto
+                miArbol.strArbol = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                // Actualizar la altura, número de nodos y hojas
+                txtAltura.Text = miArbol.alturaNiveles(miRaiz).ToString();
+                ActualizarNumNodos();
+                ActualizarNumHojas();
+            }
+            else
+            {
+                MessageBox.Show("Inserte un elemento válido");
+            }
+
+            txtEliminar.Text = "";
+        }
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+            // Verificar si el árbol es lleno o completo
+            bool esArbolLleno = miArbol.esLleno(miRaiz);
+            bool esArbolCompleto = miArbol.esCompleto(miRaiz);
+
+            // Generar mensaje según el estado del árbol
+            string mensaje;
+            if (esArbolLleno && esArbolCompleto)
+            {
+                mensaje = "El árbol es completo y lleno";
+            }
+            else if (esArbolLleno)
+            {
+                mensaje = "El árbol es lleno pero no completo";
+            }
+            else if (esArbolCompleto)
+            {
+                mensaje = "El árbol es completo pero no lleno";
+            }
+            else
+            {
+                mensaje = "El árbol no es completo ni lleno";
+            }
+
+            // Mostrar el mensaje en un MessageBox
+            MessageBox.Show(mensaje, "Estado del Árbol");
         }
     }
 }

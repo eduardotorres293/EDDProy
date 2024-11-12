@@ -72,15 +72,16 @@ namespace EDDemo
             // pilasToolStripMenuItem
             // 
             this.pilasToolStripMenuItem.Name = "pilasToolStripMenuItem";
-            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.pilasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pilasToolStripMenuItem.Text = "Pilas";
             this.pilasToolStripMenuItem.Click += new System.EventHandler(this.pilasToolStripMenuItem_Click);
             // 
             // colasToolStripMenuItem
             // 
             this.colasToolStripMenuItem.Name = "colasToolStripMenuItem";
-            this.colasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.colasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colasToolStripMenuItem.Text = "Colas";
+            this.colasToolStripMenuItem.Click += new System.EventHandler(this.colasToolStripMenuItem_Click);
             // 
             // listasToolStripMenuItem
             // 
@@ -88,7 +89,7 @@ namespace EDDemo
             this.listasSimplesToolStripMenuItem,
             this.listasDoblesToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasToolStripMenuItem.Text = "Listas";
             this.listasToolStripMenuItem.Click += new System.EventHandler(this.listasToolStripMenuItem_Click);
             // 
@@ -110,7 +111,7 @@ namespace EDDemo
             this.listasCircularesSimplesToolStripMenuItem,
             this.listasCircularesDoblesToolStripMenuItem});
             this.listasCircularesToolStripMenuItem.Name = "listasCircularesToolStripMenuItem";
-            this.listasCircularesToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.listasCircularesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasCircularesToolStripMenuItem.Text = "Listas circulares";
             // 
             // listasCircularesSimplesToolStripMenuItem

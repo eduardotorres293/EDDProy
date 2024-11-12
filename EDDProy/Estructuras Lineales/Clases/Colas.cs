@@ -18,7 +18,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             fin = null;
         }
 
-        public bool isEmpty()
+        public bool estaVacio()
         {
             return inicio == null;
         }
@@ -46,21 +46,24 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Funcion desencolar, para sacar un elemento de la lista
         public string Desencolar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;
             }
             // datoRem se refiere al dato eliminado / removido
-            string datoRem = inicio.Valor;
             Nodo eliminar = inicio;
+            // El nodo a eliminar sera el nodo inicial, y el datoRem se convierte en el valor de dicho nodo
+            string datoRem = eliminar.Valor;
             inicio = inicio.sig;
 
             if (inicio == null)
             {
                 fin = null;
             }
+            // Se elimina todo, incluido las referencias usadas para conseguir el dato a eliminar
             eliminar.Valor = null;
             eliminar.sig = null;
+            eliminar = null;
 
             return datoRem;
         }
@@ -70,7 +73,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public string Peek()
         {
             //Si el inicio es igual a nulo, se devuelve nulo (para poder hacer un isVacia() luego)
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;
             }
@@ -80,14 +83,14 @@ namespace EDDemo.Estructuras_Lineales.Clases
         //Función vaciar, para vaciar la cola
         public void Vaciar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La cola ya está vacía");
                 return;
             }
 
             // Mientras haya nodos, dequeue a cada uno
-            while (!isEmpty())
+            while (!estaVacio())
             {
                 Desencolar();
             }

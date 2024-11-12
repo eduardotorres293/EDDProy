@@ -21,7 +21,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         }
 
         // Funcion que permite comprobar si la lista esta vacía
-        public bool isEmpty()
+        public bool estaVacio()
         {
             return ultimo == null;
         }
@@ -30,7 +30,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
 
         public string Search(string valorBuscado)
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return string.Empty;
             }
@@ -65,7 +65,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             NodoDoble nuevoNodoDoble = new NodoDoble(valor);
 
             // Primero se verifica que no este vacio
-            if (isEmpty())
+            if (estaVacio())
             {
                 // Se asigna el ultimo nodo como el nuevo nodo
                 ultimo = nuevoNodoDoble;
@@ -97,7 +97,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void InsertCenter(string valor, int posicion)
         {
             // Verifica si la posición es válida (entre 1 y tamaño + 1)
-            if (posicion < 1 || posicion > tamaño + 1)
+            if (posicion < 1 && posicion > tamaño + 1)
             {
                 MessageBox.Show("Posición inválida");
                 return; // Sale si la posición no es válida
@@ -136,7 +136,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void DeleteBase()
         {
             // Verifica si la lista está vacía
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return; // Sale si la lista está vacía
@@ -164,7 +164,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void DeleteTop()
         {
             // Verifica si la lista está vacía
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return; // Sale si la lista está vacía
@@ -188,7 +188,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         public void DeleteCenter(int posicion)
         {
             // Verifica si la posición es válida (entre 1 y tamaño)
-            if (posicion < 1 || posicion > tamaño)
+            if (posicion < 1 && posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return; // Sale si la posición no es válida
@@ -224,7 +224,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Función para vaciar toda la lista
         public bool Vaciar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return false;
             }
@@ -248,7 +248,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // El llamado recorrer(), lo que permite que esta lista sea dinamica
         public string Mostrar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;
             }

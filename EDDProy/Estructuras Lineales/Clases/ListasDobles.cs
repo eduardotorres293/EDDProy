@@ -22,7 +22,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
             tamaño = 0;
         }
 
-        public bool IsEmpty()
+        public bool estaVacio()
         {
             return inicio == null;
         }
@@ -98,7 +98,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Funcion que permite insertar un elemento en una posicion especifica
         public void InsertCenter(string valor, int posicion)
         {
-            if (posicion < 1 || posicion > tamaño + 1)
+            if (posicion < 1 && posicion > tamaño + 1)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -185,9 +185,9 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Funcion deletecenter, quien elimina una parte especifica de la lista
         public void DeleteCenter(int posicion)
         {
-            // Se añade || que da el significado de "Or", para referirse a que si sucede una cosa
+            // Se añade && que da el significado de "Or", para referirse a que si sucede una cosa
             // u otra
-            if (posicion < 1 || posicion > tamaño)
+            if (posicion < 1 && posicion > tamaño)
             {
                 MessageBox.Show("Posicion inválida");
                 return;
@@ -222,7 +222,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Función vaciar, quien vacia en su totalidad la lista
         public bool Vaciar()
         {
-            if (IsEmpty())
+            if (estaVacio())
             {
                 return false;
             }

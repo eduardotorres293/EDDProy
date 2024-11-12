@@ -16,13 +16,12 @@ namespace EDDemo.Estructuras_Lineales.Clases
             inicio = null;
             tamaño = 0;
         }
-
-        public bool isEmpty()
+        // Funcion para verificar si la lista esta vacia
+        public bool estaVacio()
         {
             return tamaño == 0;
         }
 
-        // Función buscar, para buscar un elemento especifico de la lista
         // Función buscar, ahora devuelve un string con las posiciones donde se encontró el valor
         public string Search(string valorBuscado)
         {
@@ -56,7 +55,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
 
         public void DeleteBase()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return;
@@ -73,7 +72,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
                 {
                     actual = actual.sig;
                 }
-                // Aqui se igualan a null para optimizar el uso de memoria
+                // Aqui se igualan a null para eliminar el dato
                 actual.sig = null;
             }
 
@@ -83,7 +82,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Función para borrar el tope de la lista
         public void DeleteTop()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La lista está vacía");
                 return;
@@ -100,7 +99,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         {
             posicion -= 1;
 
-            if (posicion < 0 || posicion >= tamaño)
+            if (posicion < 0 && posicion >= tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -162,7 +161,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         {
             posicion -= 1;
 
-            if (posicion < 0 || posicion > tamaño)
+            if (posicion < 0 && posicion > tamaño)
             {
                 MessageBox.Show("Posición inválida");
                 return;
@@ -191,7 +190,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Función de vaciar (para vaciar la lista)
         public bool Vaciar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return false;
             }
@@ -211,7 +210,7 @@ namespace EDDemo.Estructuras_Lineales.Clases
         // Función para mostrar los elementos dentro de la lista
         public string Mostrar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;
             }

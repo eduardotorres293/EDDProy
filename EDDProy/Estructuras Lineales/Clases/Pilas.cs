@@ -16,47 +16,54 @@ namespace EDDemo
         {
             top = null;
         }
-        public bool isEmpty()
+        public bool estaVacio()
         {
             return top == null;
         }
         // Función para añadir un elemento a la pila (Push)
         public void Push(string elemento)
         {
+            // Se crea un nodo nuevo, con un parametro elemento
             Nodo nuevo = new Nodo(elemento);
+            // La referencia del nodo siguiente será el nuevo tope
             nuevo.sig = top;
+            // Aqui el tope se vuelve el nodo nuevo
             top = nuevo;
         }
 
         // Función para eliminar el elemento del tope de la pila (Pop)
         public string Pop()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 return null;  // Si está vacía, retorna null
             }
 
-            string valor = top.Valor;
-            Nodo eliminar = top;
-            top = top.sig;  // El top pasa al siguiente nodo
+            Nodo Aux = top;
 
-            // Se limpia el nodo eliminado
-            eliminar.Valor = null;
-            eliminar.sig = null;
+            // La pila de la cima es actualizada
+            top = top.sig;
 
-            return valor;  // Retorna el valor eliminado
+            // Se saca el dato del nodo eliminado
+            string Dato = Aux.Valor;
+
+            // Se libera explícitamente el nodo
+            Aux = null;  // Establecer Aux a null para borrar el dato
+
+            // Se regresa dato del nodo eliminado
+            return Dato;  // Retorna el valor eliminado
         }
         // Esta funcion permite vaciar la lista
         public void Vaciar()
         {
-            if (isEmpty())
+            if (estaVacio())
             {
                 MessageBox.Show("La pila ya está vacía");
                 return;
             }
 
             // Recorrer la pila haciendo pop y mostrando los elementos
-            while (!isEmpty())
+            while (!estaVacio())
             {
                 Pop();
             }
