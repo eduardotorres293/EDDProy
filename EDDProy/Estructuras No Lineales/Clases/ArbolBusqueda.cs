@@ -336,26 +336,26 @@ namespace EDDemo.Estructuras_No_Lineales
                 }
                 else
                 {
-                    // Si el nodo izquierdo no está presente, marcamos como nodo incompleto
+                    // Si el nodo izquierdo no está presente, se marca como nodo incompleto
                     nodoIncompleto = true;
                 }
 
                 // Verifica el hijo derecho
                 if (actual.Der != null)
                 {
-                    if (nodoIncompleto) // Si encontramos un nodo incompleto antes, no es completo
+                    if (nodoIncompleto) // Si se encuentra un nodo incompleto antes de seguir, se marca
                         return false;
 
                     colaAuxiliar.Enqueue(actual.Der);
                 }
                 else
                 {
-                    // Si el nodo derecho no está presente, marcamos como nodo incompleto
+                    // Si el nodo derecho no está presente se marca como incompleto
                     nodoIncompleto = true;
                 }
             }
 
-            return true; // Si pasamos todo el recorrido, el árbol es completo
+            return true; // Al hacer todo el recorrido, se dará true a si el arbol es completo
         }
     }
 }

@@ -332,27 +332,25 @@ namespace EDDemo.Estructuras_No_Lineales
 
         private void btnVerificar_Click(object sender, EventArgs e)
         {
-            // Verificar si el árbol es lleno
+            // Se llaman las funciones de verificacion, y a continuacion se hacen casos para comprobar si es completo y/o lleno
             bool esArbolLleno = miArbol.esLleno(miRaiz);
-
-            // Verificar si el árbol es completo
             bool esArbolCompleto = miArbol.esCompleto(miRaiz);
 
             if (esArbolLleno && esArbolCompleto)
             {
-                MessageBox.Show("El árbol es completo y lleno.");
+                MessageBox.Show("El árbol es completo\nEl árbol es lleno");
             }
             else if (esArbolLleno)
             {
-                MessageBox.Show("El árbol es lleno pero no completo.");
+                MessageBox.Show("El árbol es lleno\nEl árbol no es completo");
             }
             else if (esArbolCompleto)
             {
-                MessageBox.Show("El árbol es completo pero no lleno.");
+                MessageBox.Show("El árbol es completo\nEl árbol no es lleno");
             }
             else
             {
-                MessageBox.Show("El árbol no es completo ni lleno.");
+                MessageBox.Show("El árbol no es completo\nEl arbol no es lleno");
             }
         }
     }
