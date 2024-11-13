@@ -355,9 +355,9 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRecorridoNiveles.Location = new System.Drawing.Point(491, 247);
             this.lblRecorridoNiveles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecorridoNiveles.Name = "lblRecorridoNiveles";
-            this.lblRecorridoNiveles.Size = new System.Drawing.Size(138, 17);
+            this.lblRecorridoNiveles.Size = new System.Drawing.Size(143, 17);
             this.lblRecorridoNiveles.TabIndex = 24;
-            this.lblRecorridoNiveles.Text = "Recorrido postorden";
+            this.lblRecorridoNiveles.Text = "Recorrido por niveles";
             // 
             // lblNiveles
             // 
@@ -366,9 +366,9 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblNiveles.Location = new System.Drawing.Point(386, 247);
             this.lblNiveles.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNiveles.Name = "lblNiveles";
-            this.lblNiveles.Size = new System.Drawing.Size(80, 17);
+            this.lblNiveles.Size = new System.Drawing.Size(82, 17);
             this.lblNiveles.TabIndex = 23;
-            this.lblNiveles.Text = "PostOrden:";
+            this.lblNiveles.Text = "Por niveles:";
             // 
             // txtAltura
             // 
