@@ -114,6 +114,9 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de ordenamiento\Burbuja.cs" />
+    <Compile Include="Metodos de ordenamiento\Intercalacion.cs" />
+    <Compile Include="Metodos de ordenamiento\MezclaDirecta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras Lineales\frmColas.resx">
