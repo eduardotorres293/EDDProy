@@ -20,69 +20,69 @@ namespace EDDemo
             InitializeComponent();
         }
 
-        private void frmInicio_Load(object sender, EventArgs e)
+        public void frmInicio_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
+        public void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPilas mPilas = new frmPilas();
             mPilas.MdiParent = this;
             mPilas.Show();
         }
 
-        private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void arbolesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmArboles mArboles = new frmArboles();
             mArboles.MdiParent = this;
             mArboles.Show();
         }
 
-        private void listasToolStripMenuItem_Click(object sender, EventArgs e)
+        public void listasToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        public void colasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmColas mColas = new frmColas();
             mColas.MdiParent = this;
             mColas.Show();
         }
 
-        private void listasSimplesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void listasSimplesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListasSimples mListasSimples = new frmListasSimples();
             mListasSimples.MdiParent = this;
             mListasSimples.Show();
         }
 
-        private void listasDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void listasDoblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListasDobles mListasDobles = new frmListasDobles();
             mListasDobles.MdiParent = this;
             mListasDobles.Show();
         }
 
-        private void listasCircularesSimplesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void listasCircularesSimplesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListasCircularesSimples mListasCircularesSimples = new frmListasCircularesSimples();
             mListasCircularesSimples.MdiParent = this;
             mListasCircularesSimples.Show();
         }
 
-        private void listasCircularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        public void listasCircularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListasCircularesDobles mListasCircularesDobles = new frmListasCircularesDobles();
             mListasCircularesDobles.MdiParent = this;

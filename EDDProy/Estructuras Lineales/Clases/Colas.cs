@@ -9,8 +9,8 @@ namespace EDDemo.Estructuras_Lineales.Clases
 {
     class Cola
     {
-        private Nodo inicio;
-        private Nodo fin;
+        public Nodo inicio;
+        public Nodo fin;
 
         public Cola()
         {

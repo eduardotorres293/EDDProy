@@ -15,7 +15,7 @@ namespace EDDemo
 
     public partial class frmPilas : Form
     {
-        private Pila pila = new Pila();
+        public Pila pila = new Pila();
         public frmPilas()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace EDDemo
             textBox.Height = (cantidadLineas * alturaLineas) + espacio;
         }
         // Esta funcion refresca la pila, permitiendo que se actualicen los cambios
-        private void recorrer()
+        public void recorrer()
         {
             txtPila.Text = pila.Mostrar();
             CajaDeTexto(txtPila);
@@ -38,7 +38,7 @@ namespace EDDemo
             txtCounter.Text = pila.ActualizarTotal().ToString();
         }
 
-        private void btnPush_Click(object sender, EventArgs e)
+        public void btnPush_Click(object sender, EventArgs e)
         {
             string valor = txtValor.Text;
 
@@ -54,7 +54,7 @@ namespace EDDemo
             }
         }
 
-        private void btnPop_Click(object sender, EventArgs e)
+        public void btnPop_Click(object sender, EventArgs e)
         {
             string eliminado = pila.Pop();  // Se elimina el elemento del tope
 
@@ -68,7 +68,7 @@ namespace EDDemo
             }
         }
 
-        private void btnVaciar_Click(object sender, EventArgs e)
+        public void btnVaciar_Click(object sender, EventArgs e)
         {
             while (!pila.estaVacio())
             {

@@ -3,37 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDDemo.Estructuras_Lineales;
+using EDDemo.Estructuras_Lineales.Clases;
 
 namespace EDDemo.Metodos_de_ordenamiento
 {
     public class Intercalacion
     {
-        public List<int> IntercalarListas(List<int> lista1, List<int> lista2)
+        
+        public Listas IntercalarListas(Listas lista1, Listas lista2)
         {
-            List<int> listaIntercalada = new List<int>();
-            int i = 0, j = 0;
-            while (i < lista1.Count && j < lista2.Count)
+            Listas listaIntercalada = new Listas();
+            Nodo nodo1 = lista1.inicio;
+            Nodo nodo2 = lista2.inicio;
+
+            while (nodo1 != null && nodo2 != null)
             {
-                if (lista1[i] < lista2[j])
+                if (int.Parse(nodo1.Valor) < int.Parse(nodo2.Valor))
                 {
-                    listaIntercalada.Add(lista1[i]);
-                    i++;
+                    listaIntercalada.InsertBase(nodo1.Valor); // Insertamos en la base de la lista intercalada
+                    nodo1 = nodo1.sig;
                 }
                 else
                 {
-                    listaIntercalada.Add(lista2[j]);
-                    j++;
+                    listaIntercalada.InsertBase(nodo2.Valor);
+                    nodo2 = nodo2.sig;
                 }
             }
-            while (i < lista1.Count)
+            while (nodo1 != null)
             {
-                listaIntercalada.Add(lista1[i]);
-                i++;
+                listaIntercalada.InsertBase(nodo1.Valor);
+                nodo1 = nodo1.sig;
             }
-            while (j < lista2.Count)
+            while (nodo2 != null)
             {
-                listaIntercalada.Add(lista2[j]);
-                j++;
+                listaIntercalada.InsertBase(nodo2.Valor);
+                nodo2 = nodo2.sig;
             }
 
             return listaIntercalada;

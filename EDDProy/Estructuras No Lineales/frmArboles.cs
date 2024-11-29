@@ -33,7 +33,7 @@ namespace EDDemo.Estructuras_No_Lineales
             miRaiz = null;
         }
 
-        private void btnInsertar_Click(object sender, EventArgs e)
+        public void btnInsertar_Click(object sender, EventArgs e)
         {
 
             //Obtenemos el nodo Raiz del arbol
@@ -64,7 +64,7 @@ namespace EDDemo.Estructuras_No_Lineales
             ActualizarNumHojas();
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        public void btnLimpiar_Click(object sender, EventArgs e)
         {
             miArbol = null;
             miRaiz = null;
@@ -79,7 +79,7 @@ namespace EDDemo.Estructuras_No_Lineales
             ActualizarNumHojas();
         }
 
-        private void btnGrafica_Click(object sender, EventArgs e)
+        public void btnGrafica_Click(object sender, EventArgs e)
         {
             String graphVizString;
 
@@ -108,7 +108,7 @@ namespace EDDemo.Estructuras_No_Lineales
         }
 
 
-        private void btnRecorrer_Click(object sender, EventArgs e)
+        public void btnRecorrer_Click(object sender, EventArgs e)
         {
             //Recorrido en PreOrden
             //Obtenemos el nodo Raiz del arbol
@@ -171,7 +171,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
-        private void btnCrearArbol_Click(object sender, EventArgs e)
+        public void btnCrearArbol_Click(object sender, EventArgs e)
         {
             //Limpiamos los objetos y clases del anterior arbol
             miArbol = null;
@@ -217,26 +217,26 @@ namespace EDDemo.Estructuras_No_Lineales
             ActualizarNumHojas();
             txtDato.Text = "";
         }
-        private void ActualizarNumNodos()
+        public void ActualizarNumNodos()
         {
             txtNumNodos.Text = miArbol.ObtenerCantidadNodos().ToString();
         }
-        private void ActualizarNumHojas()
+        public void ActualizarNumHojas()
         {
             txtHojas.Text = miArbol.ObtenerCantidadHojas().ToString();
         }
 
-        private void txtDato_TextChanged(object sender, EventArgs e)
+        public void txtDato_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void frmArboles_Load(object sender, EventArgs e)
+        public void frmArboles_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        public void btnBuscar_Click(object sender, EventArgs e)
         {
             // Se obtiene el nodo raiz
             miRaiz = miArbol.RegresaRaiz();
@@ -264,7 +264,7 @@ namespace EDDemo.Estructuras_No_Lineales
             }
         }
 
-        private void btnPodar_Click(object sender, EventArgs e)
+        public void btnPodar_Click(object sender, EventArgs e)
         {
             miArbol.podaArbol();
             txtArbol.Text = "";
@@ -276,7 +276,7 @@ namespace EDDemo.Estructuras_No_Lineales
             ActualizarNumHojas();
         }
 
-        private void btnEliminarScsr_Click(object sender, EventArgs e)
+        public void btnEliminarScsr_Click(object sender, EventArgs e)
         {
             miRaiz = miArbol.RegresaRaiz();
 
@@ -303,7 +303,7 @@ namespace EDDemo.Estructuras_No_Lineales
             txtEliminar.Text = "";
         }
 
-        private void btnEliminarPrdcsr_Click(object sender, EventArgs e)
+        public void btnEliminarPrdcsr_Click(object sender, EventArgs e)
         {
             miRaiz = miArbol.RegresaRaiz();
 
@@ -330,7 +330,7 @@ namespace EDDemo.Estructuras_No_Lineales
             txtEliminar.Text = "";
         }
 
-        private void btnVerificar_Click(object sender, EventArgs e)
+        public void btnVerificar_Click(object sender, EventArgs e)
         {
             // Se llaman las funciones de verificacion, y a continuacion se hacen casos para comprobar si es completo y/o lleno
             bool esArbolLleno = miArbol.esLleno(miRaiz);

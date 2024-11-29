@@ -6,7 +6,7 @@ namespace EDDemo.Estructuras_No_Lineales
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@ namespace EDDemo.Estructuras_No_Lineales
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.txtDato = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -542,42 +542,42 @@ namespace EDDemo.Estructuras_No_Lineales
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtDato;
-        private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtArbol;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button btnGrafica;
-        private System.Windows.Forms.Button btnRecorrer;
-        private System.Windows.Forms.Label lblDatos;
-        private System.Windows.Forms.Button btnCrearArbol;
-        private System.Windows.Forms.NumericUpDown txtNodos;
-        private System.Windows.Forms.Label lblPostOrden;
-        private System.Windows.Forms.Label lblRecorridoPostOrden;
-        private System.Windows.Forms.Label lblInOrden;
-        private System.Windows.Forms.Label lblPreOrden;
-        private System.Windows.Forms.Label lblRecorridoInOrden;
-        private System.Windows.Forms.Label lblRecorridoPreOrden;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button btnPodar;
-        private System.Windows.Forms.Label lblRecorridoNiveles;
-        private System.Windows.Forms.Label lblNiveles;
-        private System.Windows.Forms.TextBox txtAltura;
-        private System.Windows.Forms.Label lblAltura;
-        private System.Windows.Forms.Label lblNumNodos;
-        private System.Windows.Forms.TextBox txtNumNodos;
-        private System.Windows.Forms.Label lblHojas;
-        private System.Windows.Forms.TextBox txtHojas;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnEliminarScsr;
-        private System.Windows.Forms.TextBox txtEliminar;
-        private System.Windows.Forms.Button btnEliminarPrdcsr;
-        private System.Windows.Forms.Button btnVerificar;
+        public System.Windows.Forms.TextBox txtDato;
+        public System.Windows.Forms.Button btnAgregar;
+        public System.Windows.Forms.TextBox txtArbol;
+        public System.Windows.Forms.Button btnLimpiar;
+        public System.Windows.Forms.Button btnGrafica;
+        public System.Windows.Forms.Button btnRecorrer;
+        public System.Windows.Forms.Label lblDatos;
+        public System.Windows.Forms.Button btnCrearArbol;
+        public System.Windows.Forms.NumericUpDown txtNodos;
+        public System.Windows.Forms.Label lblPostOrden;
+        public System.Windows.Forms.Label lblRecorridoPostOrden;
+        public System.Windows.Forms.Label lblInOrden;
+        public System.Windows.Forms.Label lblPreOrden;
+        public System.Windows.Forms.Label lblRecorridoInOrden;
+        public System.Windows.Forms.Label lblRecorridoPreOrden;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button btnBuscar;
+        public System.Windows.Forms.TextBox txtBuscar;
+        public System.Windows.Forms.Button btnPodar;
+        public System.Windows.Forms.Label lblRecorridoNiveles;
+        public System.Windows.Forms.Label lblNiveles;
+        public System.Windows.Forms.TextBox txtAltura;
+        public System.Windows.Forms.Label lblAltura;
+        public System.Windows.Forms.Label lblNumNodos;
+        public System.Windows.Forms.TextBox txtNumNodos;
+        public System.Windows.Forms.Label lblHojas;
+        public System.Windows.Forms.TextBox txtHojas;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button btnEliminarScsr;
+        public System.Windows.Forms.TextBox txtEliminar;
+        public System.Windows.Forms.Button btnEliminarPrdcsr;
+        public System.Windows.Forms.Button btnVerificar;
     }
 }

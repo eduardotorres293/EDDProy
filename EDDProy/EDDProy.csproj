@@ -117,8 +117,15 @@
     <Compile Include="Metodos de ordenamiento\Burbuja.cs" />
     <Compile Include="Metodos de ordenamiento\Intercalacion.cs" />
     <Compile Include="Metodos de ordenamiento\MezclaDirecta.cs" />
+    <Compile Include="Metodos de ordenamiento\MezclaNatural.cs" />
+    <Compile Include="Metodos de ordenamiento\Quicksort.cs" />
+    <Compile Include="Metodos de ordenamiento\Radix.cs" />
+    <Compile Include="Metodos de ordenamiento\Shellsort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\Arreglo.cs" />
+    <Compile Include="Recursividad\Exponencial.cs" />
+    <Compile Include="Recursividad\Factorial.cs" />
     <EmbeddedResource Include="Estructuras Lineales\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
     </EmbeddedResource>

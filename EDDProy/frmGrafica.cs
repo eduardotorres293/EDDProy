@@ -17,7 +17,7 @@ namespace EDDemo
             InitializeComponent();
         }
 
-        private void frmGrafica_Load(object sender, EventArgs e)
+        public void frmGrafica_Load(object sender, EventArgs e)
         {
 
         }

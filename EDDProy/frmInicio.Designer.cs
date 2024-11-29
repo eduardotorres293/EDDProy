@@ -6,7 +6,7 @@ namespace EDDemo
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@ namespace EDDemo
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.estructurasLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -165,18 +165,18 @@ namespace EDDemo
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem estructurasLinealesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem colasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem estructurasNoLibealesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem arbolesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasSimplesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasDoblesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasCircularesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasCircularesSimplesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasCircularesDoblesToolStripMenuItem;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripMenuItem estructurasLinealesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem colasToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem estructurasNoLibealesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem arbolesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasSimplesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasDoblesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasCircularesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasCircularesSimplesToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem listasCircularesDoblesToolStripMenuItem;
     }
 }
 

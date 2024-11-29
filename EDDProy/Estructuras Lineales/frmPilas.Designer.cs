@@ -6,7 +6,7 @@ namespace EDDemo
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -27,7 +27,7 @@ namespace EDDemo
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPilas));
             this.txtCounter = new System.Windows.Forms.TextBox();
@@ -205,18 +205,18 @@ namespace EDDemo
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCounter;
-        private System.Windows.Forms.Button btnVaciar;
-        private System.Windows.Forms.Button btnPop;
-        private System.Windows.Forms.Button btnPush;
-        private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPila;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.TextBox txtCounter;
+        public System.Windows.Forms.Button btnVaciar;
+        public System.Windows.Forms.Button btnPop;
+        public System.Windows.Forms.Button btnPush;
+        public System.Windows.Forms.TextBox txtValor;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtPila;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel1;
     }
 }
