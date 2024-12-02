@@ -14,10 +14,10 @@ namespace EDDemo.Estructuras_Lineales
     public partial class frmColas : Form
     {
         // Se crea un nuevo elemento cola mediante un constructor
-        public Cola cola = new Cola();
+        private Cola cola = new Cola();
 
         // Función caja de texto, utilizada en todos los cinco códigos, por lo que no veo necesario explicar todo de nuevo
-        public void CajaDeTexto(TextBox textBox)
+        private void CajaDeTexto(TextBox textBox)
         {
             int cantidadLineas = textBox.Lines.Length;
             int alturaPorLinea = textBox.Font.Height;
@@ -25,7 +25,7 @@ namespace EDDemo.Estructuras_Lineales
             textBox.Height = (cantidadLineas * alturaPorLinea) + padding;
         }
 
-        public void recorrer()
+        private void recorrer()
         {
             txtCola.Text = cola.Mostrar();
             CajaDeTexto(txtCola);
@@ -36,7 +36,7 @@ namespace EDDemo.Estructuras_Lineales
             InitializeComponent();
         }
 
-        public void btnQueue_Click(object sender, EventArgs e)
+        private void btnQueue_Click(object sender, EventArgs e)
         {
             // Se le da a valor el texto a introducir
             string valor = txtValor.Text;
@@ -55,7 +55,7 @@ namespace EDDemo.Estructuras_Lineales
             }
         }
 
-        public void btnDequeue_Click(object sender, EventArgs e)
+        private void btnDequeue_Click(object sender, EventArgs e)
         {
             // Se le da al valor removido el elemento que se quita mediante
             // desencolar()
@@ -74,7 +74,7 @@ namespace EDDemo.Estructuras_Lineales
             }
         }
 
-        public void btnPeek_Click(object sender, EventArgs e)
+        private void btnPeek_Click(object sender, EventArgs e)
         {
             // A elemento peek se le asigna el valor de la funcion peek utilizada en la cola
             string elementoPeek = cola.Peek();
@@ -91,9 +91,9 @@ namespace EDDemo.Estructuras_Lineales
             }
         }
 
-        public void btnVaciar_Click(object sender, EventArgs e)
+        private void btnVaciar_Click(object sender, EventArgs e)
         {
-            while(!cola.estaVacio())
+            while (!cola.estaVacio())
             {
                 cola.Desencolar();
             }

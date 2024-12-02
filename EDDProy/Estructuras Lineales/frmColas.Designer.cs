@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        public System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        public void InitializeComponent()
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmColas));
             this.panel1 = new System.Windows.Forms.Panel();
@@ -238,21 +238,21 @@
 
         #endregion
 
-        public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.TextBox txtTotal;
-        public System.Windows.Forms.Button btnVaciar;
-        public System.Windows.Forms.Label lblPeek;
-        public System.Windows.Forms.TextBox txtPeek;
-        public System.Windows.Forms.Label lblCola;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button btnPeek;
-        public System.Windows.Forms.Button btnDequeue;
-        public System.Windows.Forms.Button btnQueue;
-        public System.Windows.Forms.Label lblValor;
-        public System.Windows.Forms.TextBox txtValor;
-        public System.Windows.Forms.TextBox txtCola;
-        public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnVaciar;
+        private System.Windows.Forms.Label lblPeek;
+        private System.Windows.Forms.TextBox txtPeek;
+        private System.Windows.Forms.Label lblCola;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnPeek;
+        private System.Windows.Forms.Button btnDequeue;
+        private System.Windows.Forms.Button btnQueue;
+        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.TextBox txtCola;
+        private System.Windows.Forms.Label label6;
     }
 }

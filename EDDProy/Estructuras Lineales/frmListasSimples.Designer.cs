@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        public System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        public void InitializeComponent()
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListasSimples));
             this.label5 = new System.Windows.Forms.Label();
@@ -311,28 +311,28 @@
 
         #endregion
 
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox txtTotal;
-        public System.Windows.Forms.Button btnVaciar;
-        public System.Windows.Forms.Label lblPosicion;
-        public System.Windows.Forms.TextBox txtPosicion;
-        public System.Windows.Forms.ComboBox cmbInsertar;
-        public System.Windows.Forms.Button btnEliminar;
-        public System.Windows.Forms.ComboBox cmbEliminar;
-        public System.Windows.Forms.Button btnBuscar;
-        public System.Windows.Forms.TextBox txtBuscar;
-        public System.Windows.Forms.Label lblBuscar;
-        public System.Windows.Forms.Button btnInsertar;
-        public System.Windows.Forms.TextBox txtEliminar;
-        public System.Windows.Forms.Label lblEliminar;
-        public System.Windows.Forms.TextBox txtInsertar;
-        public System.Windows.Forms.Label lblInsertar;
-        public System.Windows.Forms.TextBox txtLista;
-        public System.Windows.Forms.Label lblLista;
-        public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnVaciar;
+        private System.Windows.Forms.Label lblPosicion;
+        private System.Windows.Forms.TextBox txtPosicion;
+        private System.Windows.Forms.ComboBox cmbInsertar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cmbEliminar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.TextBox txtEliminar;
+        private System.Windows.Forms.Label lblEliminar;
+        private System.Windows.Forms.TextBox txtInsertar;
+        private System.Windows.Forms.Label lblInsertar;
+        private System.Windows.Forms.TextBox txtLista;
+        private System.Windows.Forms.Label lblLista;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

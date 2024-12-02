@@ -10,9 +10,9 @@ namespace EDDemo.Estructuras_Lineales.Clases
     public class ListaCircular
     {
         // Nodo que apunta al último elemento de la lista
-        public Nodo ultimo;
+        private Nodo ultimo;
         // Contador del tamaño de la lista
-        public int tamaño;
+        private int tamaño;
         public ListaCircular()
         {
             ultimo = null;

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_Lineales.Clases;
 using EDDemo.Estructuras_No_Lineales;
+using Recursividad;
 
 namespace EDDemo
 {
@@ -87,6 +88,48 @@ namespace EDDemo
             frmListasCircularesDobles mListasCircularesDobles = new frmListasCircularesDobles();
             mListasCircularesDobles.MdiParent = this;
             mListasCircularesDobles.Show();
+        }
+
+        public void arregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Arreglo mArreglo = new Arreglo();
+            mArreglo.MdiParent = this;
+            mArreglo.Show();
+        }
+
+        public void cálculoDeUnExponenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Exponente mExponente = new Exponente();
+            mExponente.MdiParent = this;
+            mExponente.Show();
+        }
+
+        public void sumaDeElementosDeUnArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Arreglo mArreglo = new Arreglo();
+            mArreglo.MdiParent = this;
+            mArreglo.Show();
+        }
+
+        public void secuenciaDeFibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fibonacci mFibonacci = new Fibonacci();
+            mFibonacci.MdiParent = this;
+            mFibonacci.Show();
+        }
+
+        public void búsquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Binario mBinario = new Binario();
+            mBinario.MdiParent = this;
+            mBinario.Show();
+        }
+
+        public void torreDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hanoi mHanoi = new Hanoi();
+            mHanoi.MdiParent = this;
+            mHanoi.Show();
         }
     }
 }

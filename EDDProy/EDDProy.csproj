@@ -123,9 +123,42 @@
     <Compile Include="Metodos de ordenamiento\Shellsort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recursividad\Arreglo.cs" />
-    <Compile Include="Recursividad\Exponencial.cs" />
-    <Compile Include="Recursividad\Factorial.cs" />
+    <Compile Include="Recursividad\Arreglo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Arreglo.Designer.cs">
+      <DependentUpon>Arreglo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Binario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Binario.Designer.cs">
+      <DependentUpon>Binario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Exponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Exponente.Designer.cs">
+      <DependentUpon>Exponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Factorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Factorial.Designer.cs">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Fibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Fibonacci.Designer.cs">
+      <DependentUpon>Fibonacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Hanoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Hanoi.Designer.cs">
+      <DependentUpon>Hanoi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Estructuras Lineales\frmColas.resx">
       <DependentUpon>frmColas.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +195,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recursividad\Arreglo.resx">
+      <DependentUpon>Arreglo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Binario.resx">
+      <DependentUpon>Binario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Exponente.resx">
+      <DependentUpon>Exponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Factorial.resx">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Fibonacci.resx">
+      <DependentUpon>Fibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Hanoi.resx">
+      <DependentUpon>Hanoi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="bin\Debug\EDDemo.exe.config" />
     <None Include="bin\Debug\external\config6" />
     <None Include="bin\Debug\external\gvmap.sh" />

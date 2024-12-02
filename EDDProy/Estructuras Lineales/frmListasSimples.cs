@@ -13,14 +13,14 @@ namespace EDDemo.Estructuras_Lineales
 {
     public partial class frmListasSimples : Form
     {
-        public Listas lista = new Listas();
+        private Listas lista = new Listas();
         public frmListasSimples()
         {
             InitializeComponent();
             LoadComboBox();
         }
         // Método para refrescar la lista
-        public void recorrer()
+        private void recorrer()
         {
             // Mostrar el contenido de la lista
             txtLista.Text = lista.Mostrar();
@@ -30,7 +30,7 @@ namespace EDDemo.Estructuras_Lineales
         }
 
         // Método para ajustar el tamaño del TextBox
-        public void CajaDeTexto(TextBox textBox)
+        private void CajaDeTexto(TextBox textBox)
         {
             int cantidadLineas = textBox.Lines.Length;
             int alturaLineas = textBox.Font.Height;
@@ -39,7 +39,7 @@ namespace EDDemo.Estructuras_Lineales
         }
 
         // Cargar el ComboBox para opciones de inserción y eliminación
-        public void LoadComboBox()
+        private void LoadComboBox()
         {
             cmbEliminar.Items.Clear();
             cmbEliminar.Items.Add("Eliminar tope");
@@ -56,7 +56,7 @@ namespace EDDemo.Estructuras_Lineales
             cmbInsertar.SelectedIndex = 0;
         }
 
-        public void btnInsertar_Click(object sender, EventArgs e)
+        private void btnInsertar_Click(object sender, EventArgs e)
         {
             string nuevoElemento = txtInsertar.Text;
             string opcionInsertar = cmbInsertar.SelectedItem?.ToString();
@@ -99,7 +99,7 @@ namespace EDDemo.Estructuras_Lineales
             txtInsertar.Clear();
         }
 
-        public void btnEliminar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             string opcionEliminar = cmbEliminar.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(opcionEliminar))
@@ -133,7 +133,7 @@ namespace EDDemo.Estructuras_Lineales
             txtEliminar.Clear();
         }
 
-        public void btnBuscar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             string valorBuscado = txtBuscar.Text.Trim();
 
@@ -156,7 +156,7 @@ namespace EDDemo.Estructuras_Lineales
             }
         }
 
-        public void btnVaciar_Click(object sender, EventArgs e)
+        private void btnVaciar_Click(object sender, EventArgs e)
         {
             while (!lista.estaVacio())
             {

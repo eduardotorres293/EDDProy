@@ -10,10 +10,10 @@ namespace EDDemo.Estructuras_Lineales.Clases
     public class ListaDoble
     {
         // Primer NodoDoble
-        public NodoDoble inicio;
+        private NodoDoble inicio;
         // Ultimo NodoDoble
-        public NodoDoble cola;
-        public int tamaño;
+        private NodoDoble cola;
+        private int tamaño;
 
         public ListaDoble()
         {

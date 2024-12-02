@@ -230,7 +230,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         public void recorridoNiveles()
         {
-            if(Raiz == null)
+            if (Raiz == null)
             {
                 MessageBox.Show("El arbol está vacío");
                 return;
