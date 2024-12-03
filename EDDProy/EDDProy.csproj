@@ -114,6 +114,9 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de busqueda\Clases\BusquedaBinaria.cs" />
+    <Compile Include="Metodos de busqueda\Clases\BusquedaHash.cs" />
+    <Compile Include="Metodos de busqueda\Clases\BusquedaSecuencial.cs" />
     <Compile Include="Metodos de ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos de ordenamiento\frmBurbuja.cs">
       <SubType>Form</SubType>

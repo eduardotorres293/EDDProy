@@ -42,7 +42,6 @@ namespace EDDemo.Metodos_de_ordenamiento
             // Mostramos la lista ordenada en txtOrdenado
             txtOrdenado.Text = lista.ToString();  // Usamos ToString para mostrar los números ordenados
 
-            // Mostramos el tiempo de ejecución en el TextBox txtTiempo
             txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
         }
 
@@ -53,12 +52,12 @@ namespace EDDemo.Metodos_de_ordenamiento
             {
                 Random random = new Random();
                 string listaTexto = "";
-                // Creamos la lista enlazada
+
                 Listas lista = new Listas();
                 for (int i = 0; i < cantidad; i++)
                 {
                     int numero = random.Next(1, 100);
-                    // Insertamos cada número en la lista enlazada
+
                     lista.InsertBase(numero.ToString());
                     if (i > 0)
                     {
