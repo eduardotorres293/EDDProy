@@ -9,7 +9,8 @@ namespace EDDemo.Metodos_de_ordenamiento
 {
     public class Quicksort
     {
-        static void quicksort(int[] A, int inf, int sup)
+        // Aquí utilice int[] (arreglo) para quicksort porque el codigo se iba a complicar si utilizaba las listas
+        public static void FuncionQuicksort(int[] A, int inf, int sup)
         {
             if (inf >= sup)
                 return;
@@ -42,11 +43,11 @@ namespace EDDemo.Metodos_de_ordenamiento
             // Llamadas recursivas para ordenar las sublistas
             if (inf < j)
             {
-                quicksort(A, inf, j);
+                FuncionQuicksort(A, inf, j);
             }
             if (i < sup)
             {
-                quicksort(A, i, sup);
+                FuncionQuicksort(A, i, sup);
             }
         }
 

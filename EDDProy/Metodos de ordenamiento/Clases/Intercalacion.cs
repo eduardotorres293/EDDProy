@@ -11,7 +11,7 @@ namespace EDDemo.Metodos_de_ordenamiento
     public class Intercalacion
     {
         
-        public Listas IntercalarListas(Listas lista1, Listas lista2)
+        public Listas FuncionIntercalacion(Listas lista1, Listas lista2)
         {
             Listas listaIntercalada = new Listas();
             Nodo nodo1 = lista1.inicio;

@@ -16,6 +16,30 @@ namespace EDDemo.Estructuras_Lineales.Clases
             inicio = null;
             tamaño = 0;
         }
+        public override string ToString()
+        {
+            if (estaVacio())
+            {
+                return "La lista está vacía.";
+            }
+
+            Nodo actual = inicio;
+            string result = "";
+
+            // Recorrer los nodos de la lista y concatenar sus valores
+            while (actual != null)
+            {
+                result += actual.Valor;
+                if (actual.sig != null)
+                {
+                    result += ", ";  // Separa los valores con coma
+                }
+                actual = actual.sig;  // Mover al siguiente nodo
+            }
+
+            return result;
+        }
+
         // Funcion para verificar si la lista esta vacia
         public bool estaVacio()
         {
