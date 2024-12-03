@@ -29,7 +29,7 @@ namespace EDDemo.Metodos_de_ordenamiento
 
                 for (int i = 0; i < cantidad; i++)
                 {
-                    int numero = random.Next(1, 10000);
+                    int numero = random.Next(1, 100);
 
                     if (i > 0)
                     {

@@ -234,8 +234,20 @@
     <EmbeddedResource Include="Metodos de ordenamiento\frmIntercalacion.resx">
       <DependentUpon>frmIntercalacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmMezclaDirecta.resx">
+      <DependentUpon>frmMezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmMezclaNatural.resx">
+      <DependentUpon>frmMezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metodos de ordenamiento\frmQuicksort.resx">
       <DependentUpon>frmQuicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmRadix.resx">
+      <DependentUpon>frmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\frmShellsort.resx">
+      <DependentUpon>frmShellsort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
