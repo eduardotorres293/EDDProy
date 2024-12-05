@@ -40,6 +40,7 @@
             this.btnOrdenar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtOrdenado = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,6 +119,7 @@
             // 
             // txtTiempo
             // 
+            this.txtTiempo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtTiempo.Location = new System.Drawing.Point(604, 181);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.ReadOnly = true;
@@ -146,16 +148,29 @@
             // 
             // txtOrdenado
             // 
+            this.txtOrdenado.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtOrdenado.Location = new System.Drawing.Point(604, 118);
             this.txtOrdenado.Name = "txtOrdenado";
+            this.txtOrdenado.ReadOnly = true;
             this.txtOrdenado.Size = new System.Drawing.Size(360, 20);
             this.txtOrdenado.TabIndex = 33;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(600, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.TabIndex = 75;
+            this.label5.Text = "Tiempo";
             // 
             // frmQuicksort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.label6);
@@ -190,5 +205,6 @@
         private System.Windows.Forms.Button btnOrdenar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtOrdenado;
+        private System.Windows.Forms.Label label5;
     }
 }

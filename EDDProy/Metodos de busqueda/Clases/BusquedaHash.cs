@@ -8,7 +8,7 @@ namespace EDDemo.Metodos_de_busqueda.Clases
 {
     internal class BusquedaHash
     {
-        class HashTable
+        public class HashTable
         {
             private const int TAMANIO = 100; // Tamaño fijo de la tabla hash
             private int[] claves;
@@ -32,7 +32,7 @@ namespace EDDemo.Metodos_de_busqueda.Clases
             }
 
             // Función hash polinomial para cadenas
-            static int FuncionHashPolinomial(string clave, int tamanioTabla)
+            public static int FuncionHashPolinomial(string clave, int tamanioTabla)
             {
                 const int basePolinomial = 31; // Base comúnmente usada para funciones hash
                 int hash = 0;
@@ -48,7 +48,7 @@ namespace EDDemo.Metodos_de_busqueda.Clases
             }
 
             // Función hash avanzada para números enteros
-            static long FuncionHashAvanzada(uint clave, int tamanioTabla)
+            public static long FuncionHashAvanzada(uint clave, int tamanioTabla)
             {
                 const int primo = 31; // Número primo para la mezcla
                 const uint mezclaBits = 0x9E3779B9; // Constante "mágica" derivada de la proporción áurea
@@ -68,9 +68,10 @@ namespace EDDemo.Metodos_de_busqueda.Clases
 
 
             // Insertar clave y valor en la tabla
-            public void Insertar(int clave, string valor)
+            public void Insertar(string valor)
             {
-                int indice = FuncionHash(clave, TAMANIO);
+                int clave = FuncionHashPolinomial(valor, TAMANIO);
+                int indice = clave % TAMANIO;
                 while (claves[indice] != -1) // Resolver colisiones mediante linealidad
                 {
                     indice = (indice + 1) % TAMANIO;
@@ -82,7 +83,7 @@ namespace EDDemo.Metodos_de_busqueda.Clases
             // Buscar un valor por su clave
             public string Buscar(int clave)
             {
-                int indice = FuncionHash(clave, TAMANIO);
+                int indice = clave % TAMANIO;
                 int inicio = indice;
 
                 while (claves[indice] != -1)
@@ -100,6 +101,14 @@ namespace EDDemo.Metodos_de_busqueda.Clases
                     }
                 }
                 return null; // No encontrado
+            }
+            public void LimpiarTabla()
+            {
+                for (int i = 0; i < TAMANIO; i++)
+                {
+                    claves[i] = -1;
+                    valores[i] = null;
+                }
             }
         }
     }

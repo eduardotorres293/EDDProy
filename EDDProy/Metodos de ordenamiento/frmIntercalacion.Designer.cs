@@ -45,6 +45,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnIntercalar = new System.Windows.Forms.Button();
             this.txtTiempo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,8 +168,10 @@
             // 
             // txtIntercalado
             // 
+            this.txtIntercalado.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtIntercalado.Location = new System.Drawing.Point(607, 216);
             this.txtIntercalado.Name = "txtIntercalado";
+            this.txtIntercalado.ReadOnly = true;
             this.txtIntercalado.Size = new System.Drawing.Size(360, 20);
             this.txtIntercalado.TabIndex = 29;
             // 
@@ -200,11 +203,22 @@
             this.txtTiempo.Size = new System.Drawing.Size(78, 20);
             this.txtTiempo.TabIndex = 32;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label7.Location = new System.Drawing.Point(603, 255);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.TabIndex = 75;
+            this.label7.Text = "Tiempo";
+            // 
             // frmIntercalacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.btnIntercalar);
             this.Controls.Add(this.label6);
@@ -249,5 +263,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnIntercalar;
         private System.Windows.Forms.TextBox txtTiempo;
+        private System.Windows.Forms.Label label7;
     }
 }

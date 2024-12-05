@@ -252,6 +252,9 @@
     <EmbeddedResource Include="Metodos de busqueda\frmBusquedaBinaria.resx">
       <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\frmBusquedaHash.resx">
+      <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metodos de busqueda\frmBusquedaSecuencial.resx">
       <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
     </EmbeddedResource>

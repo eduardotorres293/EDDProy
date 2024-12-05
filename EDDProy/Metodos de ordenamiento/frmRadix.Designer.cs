@@ -40,11 +40,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTiempo
             // 
+            this.txtTiempo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtTiempo.Location = new System.Drawing.Point(604, 181);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.ReadOnly = true;
@@ -73,8 +75,10 @@
             // 
             // txtOrdenado
             // 
+            this.txtOrdenado.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtOrdenado.Location = new System.Drawing.Point(604, 118);
             this.txtOrdenado.Name = "txtOrdenado";
+            this.txtOrdenado.ReadOnly = true;
             this.txtOrdenado.Size = new System.Drawing.Size(360, 20);
             this.txtOrdenado.TabIndex = 55;
             // 
@@ -151,11 +155,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Metodos de ordenamiento";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(600, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.TabIndex = 75;
+            this.label5.Text = "Tiempo";
+            // 
             // frmRadix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTiempo);
             this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.label6);
@@ -190,5 +205,6 @@
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
     }
 }
