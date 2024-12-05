@@ -117,6 +117,24 @@
     <Compile Include="Metodos de busqueda\Clases\BusquedaBinaria.cs" />
     <Compile Include="Metodos de busqueda\Clases\BusquedaHash.cs" />
     <Compile Include="Metodos de busqueda\Clases\BusquedaSecuencial.cs" />
+    <Compile Include="Metodos de busqueda\frmBusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmBusquedaBinaria.Designer.cs">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmBusquedaHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmBusquedaHash.Designer.cs">
+      <DependentUpon>frmBusquedaHash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmBusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\frmBusquedaSecuencial.Designer.cs">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos de ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos de ordenamiento\frmBurbuja.cs">
       <SubType>Form</SubType>

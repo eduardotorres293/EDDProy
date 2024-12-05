@@ -21,7 +21,7 @@ namespace EDDemo.Metodos_de_busqueda.Clases
             }
             else
             {
-                return "Elemento no encontrado en la lista";
+                return "Elemento no encontrado";
             }
         }
     }

@@ -9,7 +9,6 @@ namespace EDDemo.Metodos_de_ordenamiento
 {
     internal class MezclaDirecta
     {
-        // Función para realizar el merge sort
         public static Listas FuncionMezclaDirecta(Listas lista)
         {
             // Caso base: si la lista tiene 0 o 1 elemento, ya está ordenada
@@ -18,81 +17,88 @@ namespace EDDemo.Metodos_de_ordenamiento
                 return lista;
             }
 
-            // Dividir la lista en dos mitades
+            // Se divide la lista en dos mitades, izquierda y derecha
             Listas izquierda = new Listas();
             Listas derecha = new Listas();
 
-            // Rellenamos las dos sublistas
+            // Se llama a la funcion DividirLista para dividir la lista en dos partes
             DividirLista(lista, izquierda, derecha);
 
-            // Ordenamos recursivamente las dos sublistas
+            // Las dos sublistas son ordenadas recursivamente
             izquierda = FuncionMezclaDirecta(izquierda);
             derecha = FuncionMezclaDirecta(derecha);
 
-            // Fusionamos las dos sublistas ordenadas
+            // Y se vuelven a mezclar las dos sublistas, ya ordenadas
             return Mezclar(izquierda, derecha);
         }
 
-        // Función para dividir la lista en dos mitades
+        // Esta funcion divide la lista dada por dos sublistas, una izquierda y otra derecha
         private static void DividirLista(Listas lista, Listas izquierda, Listas derecha)
         {
+            // Se calcula el punto medio de la lista al dividirlo entre 2
             int mitad = lista.tamaño / 2;
-            Nodo actual = lista.inicio;
+            Nodo actual = lista.inicio; // Se empieza desde el primer nodo
             int contador = 1;
 
-            // Dividimos los nodos en la lista de la izquierda
+            // Se dividen las primeras mitades a la lista izquierda
             while (contador <= mitad)
             {
-                izquierda.InsertBase(actual.Valor);
-                actual = actual.sig;
+                izquierda.InsertBase(actual.Valor); // Se inserta el valor del nodo actual
+                actual = actual.sig; // Y se avanza al siguiente nodo
                 contador++;
             }
 
-            // Dividimos los nodos restantes en la lista de la derecha
+            // Los restantes se insertan en la lista derecha
             while (actual != null)
             {
-                derecha.InsertBase(actual.Valor);
-                actual = actual.sig;
+                derecha.InsertBase(actual.Valor); // Aquí tambien se inserta el valor del nodo actual
+                actual = actual.sig; // Y se avanza al siguiente
             }
         }
 
-        // Función para fusionar dos listas ordenadas
+        // Esta funcion es la que permite la mezcla entre los dos elementos
+        // haciendólo de vuelta a una lista ordenada
         private static Listas Mezclar(Listas izquierda, Listas derecha)
         {
-            Listas listaOrdenada = new Listas();
-            Nodo nodoIzq = izquierda.inicio;
-            Nodo nodoDer = derecha.inicio;
+            Listas listaOrdenada = new Listas(); // Esta lista es la que tendrá los valores mezclados
+            Nodo nodoIzq = izquierda.inicio; // Se usa el primer nodo izquierdo
+            Nodo nodoDer = derecha.inicio; // Se usa el primer nodo derecho
 
-            // Fusionamos las listas ordenadas
+            // Mientras ambas listas tengan elementos por procesar se hace un while
             while (nodoIzq != null && nodoDer != null)
             {
+                // Primero se comparan los valores de los nodos actuales en ambas listas
                 if (string.Compare(nodoIzq.Valor, nodoDer.Valor) < 0)
                 {
+                    // Se inserta el valor en la base
                     listaOrdenada.InsertBase(nodoIzq.Valor);
+                    // Y luego se avanza al siguiente nodo
                     nodoIzq = nodoIzq.sig;
                 }
                 else
                 {
+                    // Se inserta el valor en la base
                     listaOrdenada.InsertBase(nodoDer.Valor);
+                    // Se avanza al siguiente nodo
                     nodoDer = nodoDer.sig;
                 }
             }
 
-            // Si quedan elementos en la lista izquierda, los agregamos
+            // Si quedan elementos en la lista izquierda se agregan en la lista ordenada
             while (nodoIzq != null)
             {
-                listaOrdenada.InsertBase(nodoIzq.Valor);
-                nodoIzq = nodoIzq.sig;
+                listaOrdenada.InsertBase(nodoIzq.Valor); // Se inserta el valor en la lista ordenada
+                nodoIzq = nodoIzq.sig; // Se avanza al siguiente nodo
             }
 
-            // Si quedan elementos en la lista derecha, los agregamos
+            // Si quedan elementos en la lista derecha se agregan
             while (nodoDer != null)
             {
-                listaOrdenada.InsertBase(nodoDer.Valor);
-                nodoDer = nodoDer.sig;
+                listaOrdenada.InsertBase(nodoDer.Valor); // Se inserta el valor en la lista ordenada
+                nodoDer = nodoDer.sig; // Se avanza al siguiente nodo
             }
 
-            return listaOrdenada;
+            return listaOrdenada; // Como paso final se regresa completa la lista ordenada
         }
     }
 }
