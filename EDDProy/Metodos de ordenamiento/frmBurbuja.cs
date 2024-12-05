@@ -71,7 +71,7 @@ namespace EDDemo.Metodos_de_ordenamiento
             // Mostramos los resultados ordenados
             txtOrdenado.Text = lista.ToString(); // Asegúrate de tener un método ToString() en la clase Listas para representar la lista ordenada
 
-            txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
+            txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
         }
     }
 }

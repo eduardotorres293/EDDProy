@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -56,6 +57,8 @@ namespace EDDemo.Metodos_de_busqueda
             int valorBuscar;
             if (int.TryParse(txtBuscar.Text, out valorBuscar))
             {
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
                 Listas listaEnlazada = new Listas();
                 foreach (var num in listaOriginal)
                 {
@@ -63,8 +66,9 @@ namespace EDDemo.Metodos_de_busqueda
                 }
 
                 string resultado = BusquedaSecuencial.FuncionSecuencial(listaEnlazada, valorBuscar.ToString());
-
+                stopwatch.Stop();
                 MessageBox.Show(resultado);
+                txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
             }
             else
             {

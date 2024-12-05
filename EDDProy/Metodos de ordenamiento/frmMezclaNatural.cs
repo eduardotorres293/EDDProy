@@ -42,7 +42,7 @@ namespace EDDemo.Metodos_de_ordenamiento
             // Mostramos la lista ordenada en txtOrdenado
             txtOrdenado.Text = lista.ToString();  // Usamos ToString para mostrar los números ordenados
 
-            txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
+            txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
         }
 
         private void btnGenerar_Click(object sender, EventArgs e)

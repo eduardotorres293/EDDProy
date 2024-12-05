@@ -76,7 +76,7 @@ namespace EDDemo.Metodos_de_ordenamiento
 
             // Aquí se mide en ticks, ya que los milisegundos es una escala grande para esto
             // Siempre marca 0 cuando se usan milisegundos
-            txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
+            txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
         }
     }
 }

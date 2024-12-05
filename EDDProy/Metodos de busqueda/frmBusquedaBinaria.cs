@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,7 +56,11 @@ namespace EDDemo.Metodos_de_busqueda
             int valorBuscar;
             if (int.TryParse(txtBuscar.Text, out valorBuscar))
             {
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
                 int resultado = BusquedaBinaria.FuncionBinaria(listaNumeros.ToArray(), valorBuscar);
+                stopwatch.Stop();
+                txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
                 if (resultado != -1)
                 {
                     int posicionOriginal = listaOriginal.IndexOf(valorBuscar) + 1;

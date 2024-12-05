@@ -79,7 +79,7 @@ namespace EDDemo.Metodos_de_ordenamiento
             txtOrdenado.Text = string.Join(", ", numeros);
 
             // Mostramos el tiempo de ejecución en el TextBox txtTiempo
-            txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
+            txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
         }
     }
 }

@@ -130,7 +130,7 @@ namespace EDDemo.Metodos_de_ordenamiento
             stopwatch.Stop();
 
             // Mostrar el tiempo de ejecución en el TextBox txtTiempo
-            txtTiempo.Text = $"{stopwatch.ElapsedTicks} ticks";
+            txtTiempo.Text = $"{stopwatch.Elapsed.TotalMilliseconds} ms";
 
             // Mostrar los números intercalados en el TextBox correspondiente
             Nodo nodo = listaIntercalada.inicio;
