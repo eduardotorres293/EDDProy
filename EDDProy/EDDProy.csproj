@@ -249,6 +249,12 @@
     <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\frmBusquedaBinaria.resx">
+      <DependentUpon>frmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\frmBusquedaSecuencial.resx">
+      <DependentUpon>frmBusquedaSecuencial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metodos de ordenamiento\frmBurbuja.resx">
       <DependentUpon>frmBurbuja.cs</DependentUpon>
     </EmbeddedResource>

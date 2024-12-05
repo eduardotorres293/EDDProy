@@ -9,15 +9,16 @@ namespace EDDemo.Metodos_de_ordenamiento
 {
     public class Quicksort
     {
-        // Aquí utilice int[] (arreglo) para quicksort porque el codigo se iba a complicar si utilizaba las listas
+        // Aquí utilicé int[] (arreglo) para quicksort porque el codigo se iba a complicar si utilizaba las listas
         public static void FuncionQuicksort(int[] A, int inf, int sup)
         {
+            // Si el indice inferior es mayor o igual al superior significa que ya está ordenado
             if (inf >= sup)
                 return;
 
-            int i = inf;
-            int j = sup;
-            int x = A[(inf + sup) / 2]; // Elemento pivote
+            int i = inf; // Se iniciliazan los indices para las particiones, siendo i
+            int j = sup; // y j
+            int x = A[(inf + sup) / 2]; // Esta es la elección del pivote, siendo el del medio del arreglo
 
             while (i <= j)
             {
@@ -29,25 +30,26 @@ namespace EDDemo.Metodos_de_ordenamiento
                 while (A[j] > x)
                     j--;
 
-                // Si los índices no se han cruzado, intercambiar los elementos
+                // Si los índices no se han cruzado, se intercambian los elementos
                 if (i <= j)
                 {
                     int temp = A[i];
                     A[i] = A[j];
                     A[j] = temp;
-                    i++;
-                    j--;
+                    i++; // Se aumenta i para que apunte al siguiente elemento
+                    j--; // Y se reduce j para que apunte al anterior
                 }
             }
 
-            // Llamadas recursivas para ordenar las sublistas
+            // Llamadas recursivas para ordenar las sublistas, siendo esta la sublista izquierda
             if (inf < j)
             {
-                FuncionQuicksort(A, inf, j);
+                FuncionQuicksort(A, inf, j); // Va desde inf hasta j
             }
+            // Y esta la sublista derecha
             if (i < sup)
             {
-                FuncionQuicksort(A, i, sup);
+                FuncionQuicksort(A, i, sup); // Va desde i hasta sup
             }
         }
 

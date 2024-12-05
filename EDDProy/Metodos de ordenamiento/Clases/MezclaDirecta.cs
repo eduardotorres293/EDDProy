@@ -67,8 +67,12 @@ namespace EDDemo.Metodos_de_ordenamiento
             // Mientras ambas listas tengan elementos por procesar se hace un while
             while (nodoIzq != null && nodoDer != null)
             {
-                // Primero se comparan los valores de los nodos actuales en ambas listas
-                if (string.Compare(nodoIzq.Valor, nodoDer.Valor) < 0)
+                // Convertimos los valores de los nodos a decimal para realizar una comparación numérica
+                decimal valorIzq = decimal.Parse(nodoIzq.Valor);
+                decimal valorDer = decimal.Parse(nodoDer.Valor);
+
+                // Comparamos los valores numéricamente
+                if (valorIzq < valorDer)
                 {
                     // Se inserta el valor en la base
                     listaOrdenada.InsertBase(nodoIzq.Valor);
